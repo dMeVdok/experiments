@@ -124,10 +124,6 @@ Timeseries / Audio:
 
 **V-Measure or Normalized Mutual Information.** It is an F1-like normalized homogeneity and completeness: $V=2\frac{homogeneity\cdot completeness}{homogeneity+completeness}$
 
----
-
-# Unresolved
-
 ### Q: Explain classical Bayesian inference
 A: If we have a $\theta$-parameterized statistical model of our answers $p(y|x,\theta)$, we can use the training sample $(x,y)$ to fit the $\theta$ via the Bayes theorem: $p(\theta|x,y)=\frac{p(y|x,\theta)p(\theta)}{p(y)}$. Next we can do a Maximum a posteriori estimation $\theta = \arg\max_\theta p(y|x,\theta)p(\theta)$, but the full inference is deriving the density of $p(\theta|x,y)$, i.e. computing the integral $\int p(y|x,\theta)p(\theta) d\theta$ which is generally impossible to do analytically. However, if $p(\theta)$ and $p(y|theta)$ are *conjugate* distributions, then the posterior $p(\theta|y,x)$ belongs to the same family as $p(\theta)$.
 
